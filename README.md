@@ -1,2 +1,2 @@
 # Max-Boada
-https://github.com/Arifernandez18/Max-Boada.git/
+https://arifernandez18.github.io/Max-Boada
