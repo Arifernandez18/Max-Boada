@@ -462,9 +462,9 @@
   .wa-btn {
     display:inline-flex;align-items:center;gap:8px;
     padding:12px 24px;border-radius:8px;font-size:14px;font-weight:600;
-    background:#25D366;color:white;text-decoration:none;transition:all .2s;white-space:nowrap;
+    background:var(--teal);color:white;text-decoration:none;transition:all .2s;white-space:nowrap;
   }
-  .wa-btn:hover { background:#1eb856;transform:translateY(-2px); }
+  .wa-btn:hover { background:var(--teal-mid);transform:translateY(-2px); }
 
   /* ── FOOTER ── */
   footer { background:var(--navy);color:rgba(255,255,255,0.45);padding:60px 6% 26px; }
@@ -591,7 +591,7 @@
       <p class="hero-sub">Atención anestésica integral para niños y adultos en Caracas, con los más altos estándares de seguridad, tecnología de vanguardia y calidez humana en cada procedimiento.</p>
       <div class="hero-actions">
         <a href="javascript:void(0)" onclick="openChat('appointment')" class="btn-green">📋 Agenda mis servicios</a>
-        <a href="https://wa.me/584143118917?text=Estoy%20interesado%20en%20tus%20servicios" class="btn-ghost">💬 WhatsApp</a> 
+        <a href="mailto:bramador33@gmail.com" class="btn-ghost">✉️ Enviar correo</a>
       </div>
       <div class="hero-badges">
         <div class="hero-badge">
@@ -702,16 +702,6 @@
         <p class="svc-desc">Procedimientos diagnósticos o terapéuticos con sedación consciente o profunda según el caso clínico.</p>
       </div>
 
-      <!-- 5 GREEN -->
-      <div class="svc-card green">
-        <div class="svc-icon green">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-green">
-            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-          </svg>
-        </div>
-        <div class="svc-name">Manejo del Dolor</div>
-        <p class="svc-desc">Tratamientos personalizados para el control del dolor agudo y crónico, mejorando tu calidad de vida.</p>
-      </div>
 
     </div>
   </div>
@@ -728,9 +718,14 @@
         <h2>Anestesia Pediátrica</h2>
         <p style="font-size:17px;font-weight:600;color:var(--navy);margin-bottom:12px;">Cuidado experto para los más importantes</p>
         <p class="sub">Entendemos que cada niño es único. Brindamos un ambiente seguro, cálido y especialmente diseñado para reducir el miedo y la ansiedad, garantizando su bienestar en todo momento.</p>
+        <div style="margin:18px 0 14px;padding:16px 20px;background:linear-gradient(135deg,rgba(27,158,142,0.10),rgba(58,123,213,0.08));border-left:4px solid var(--teal);border-radius:10px;">
+          <p style="font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px;">⚠️ Especialización en niños gravemente enfermos</p>
+          <p style="font-size:13.5px;line-height:1.65;color:var(--gray-600);">El Dr. Boada cuenta con experiencia específica en el manejo anestésico de pacientes pediátricos críticos — niños con patologías complejas, condiciones preexistentes graves o alto riesgo quirúrgico. Cada caso es evaluado con el máximo rigor y una planificación individualizada para garantizar la mayor seguridad posible.</p>
+        </div>
         <ul class="ped-list">
           <li><div class="ped-check">✓</div>Equipos y medicamentos adaptados a cada edad y peso</li>
           <li><div class="ped-check">✓</div>Monitoreo continuo con tecnología de primer nivel</li>
+          <li><div class="ped-check">✓</div>Manejo de casos complejos y pacientes de alto riesgo</li>
           <li><div class="ped-check">✓</div>Acompañamiento cercano a padres y cuidadores</li>
           <li><div class="ped-check">✓</div>Protocolos especializados para reducir la ansiedad preoperatoria</li>
           <li><div class="ped-check">✓</div>Comunicación clara y empática con toda la familia</li>
@@ -870,7 +865,7 @@
   <div class="sec-inner">
     <div class="centered">
       <div class="eyebrow">Experiencias reales</div>
-      <h2>Lo que dicen mis pacientes</h2>
+      <h2>Lo que dicen mis pacientes y compañeros</h2>
     </div>
     <div class="testi-grid">
       <div class="testi-card green">
@@ -888,8 +883,8 @@
       <div class="testi-card green">
         <div class="testi-q">"</div>
         <div class="testi-stars green">★★★★★</div>
-        <p class="testi-text">Profesionalismo y calidez humana en cada momento. El Dr. Boada respondió todas mis preguntas con paciencia. Sin duda el mejor anestesiólogo de Venezuela.</p>
-        <div class="testi-author"><div class="testi-av green">L</div><div><div class="testi-name">Lucía Fernández</div><div class="testi-loc">Caracas, VE</div></div></div>
+        <p class="testi-text">Como cirujano, trabajar con Max es una tranquilidad enorme. Su manejo anestésico es preciso, anticipado y seguro. Siempre está un paso adelante en el quirófano — se nota la experiencia y el criterio clínico. Es el tipo de colega con quien uno opera confiado.</p>
+        <div class="testi-author"><div class="testi-av green">M</div><div><div class="testi-name">Dr. Marcos Fernández</div><div class="testi-loc">Cirujano · Caracas, VE</div></div></div>
       </div>
     </div>
   </div>
@@ -904,14 +899,13 @@
       <h2>¿Tienes preguntas sobre mis servicios?</h2>
       <p>Estoy aquí para resolver tus dudas y acompañarte en cada paso. Atención en español e inglés.</p>
       <div class="cta-meta">
-        <span>📞 +58 414 311 8917</span>
-        <span>✉️ drboada@anestesiamn.com</span>
+        <span>✉️ bramador33@gmail.com</span>
         <span>📍 Caracas, Venezuela</span>
       </div>
     </div>
     <div class="cta-btns">
       <a href="javascript:void(0)" onclick="openChat('appointment')" class="btn-green" style="white-space:nowrap;">📋 Agenda mis servicios</a>
-      <a href="https://wa.me/584143118917?text=Estoy%20interesado%20en%20tus%20servicios" class="wa-btn">💬 Contactar por WhatsApp</a>
+      <a href="mailto:bramador33@gmail.com" class="wa-btn" style="background:#1B9E8E;">✉️ Contactar por correo</a>
     </div>
   </div>
 </section>
@@ -951,7 +945,7 @@
     <div>
       <div class="ft-title">Contacto</div>
       <div class="ft-ci">📞 (612) 555-0199</div>
-      <div class="ft-ci">✉️ drboada@anestesiamn.com</div>
+      <div class="ft-ci">✉️ bramador33@gmail.com</div>
       <div class="ft-ci">📍 Caracas, Venezuela.</div>
       <div class="ft-ci">🕐 Lun–Vie 8:00 AM – 5:00 PM </div>
     </div>
@@ -1100,10 +1094,10 @@
   }
   .cb-send:hover { transform: scale(1.1); }
 
-  /* ── WhatsApp button inside chat ── */
+  /* ── Email button inside chat ── */
   .chat-wa-btn {
     display: inline-flex; align-items: center; gap: 6px;
-    background: #25d366; color: #fff; text-decoration: none;
+    background: #1B9E8E; color: #fff; text-decoration: none;
     border-radius: 12px; padding: 7px 13px; font-size: 12.5px;
     font-weight: 600; margin-top: 7px;
   }
@@ -1150,17 +1144,9 @@
 <script>
 // ── Config ──────────────────────────────────────────────
 const CB = {
-  wa:      "584143118917",
+  email:   "bramador33@gmail.com",
   backend: "http://localhost:3003",
 };
-
-const waAppMsg = encodeURIComponent(
-  "Hola, estoy interesado/a y quiero agendar una cita 😊\n\n" +
-  "Procedimiento de interés: \n" +
-  "Doctor o paciente: \n" +
-  "Días de la semana disponibles: \n" +
-  "Alguna duda?: "
-);
 
 // ── FAB toggle ──────────────────────────────────────────
 function toggleChat() {
@@ -1183,18 +1169,18 @@ const CB_KB = {
   prices: `Los precios varían según el tipo de procedimiento y la complejidad del caso:<br><br>
 💼 <b>Sedación quirúrgica</b> → tarifa mayor (incluye anestesia general + monitoreo).<br>
 📍 <b>Sedación de zonas específicas</b> → tarifa más accesible.<br><br>
-Para un presupuesto <b>exacto y personalizado</b>, comunícate directamente con el Dr. Boada por WhatsApp:<br>
-<a href="https://wa.me/${CB.wa}" target="_blank" class="chat-wa-btn">💬 Preguntar por precio</a>`,
+Para un presupuesto <b>exacto y personalizado</b>, comunícate directamente con el Dr. Boada por correo:<br>
+<a href="mailto:${CB.email}" class="chat-wa-btn">✉️ Preguntar por precio</a>`,
 
-  appointment: `¡Perfecto! El mensaje ya viene listo en WhatsApp — solo completa los espacios y envíalo 😊<br>
-<a href="https://wa.me/${CB.wa}?text=${waAppMsg}" target="_blank" class="chat-wa-btn">📅 Agendar cita por WhatsApp</a>`,
+  appointment: `¡Perfecto! Escríbenos al correo y con gusto coordinamos tu cita 😊<br>
+<a href="mailto:${CB.email}?subject=Solicitud%20de%20cita&body=Procedimiento%20de%20inter%C3%A9s%3A%20%0ADoctor%20o%20paciente%3A%20%0AD%C3%ADas%20disponibles%3A%20%0AAlguna%20duda%3A%20" class="chat-wa-btn">📅 Agendar cita por correo</a>`,
 
   doctor_collab: `¡Bienvenido/a, colega! 👨‍⚕️<br><br>
-El Dr. Boada está abierto a colaborar con médicos especialistas. Escríbele por WhatsApp indicando:<br><br>
+El Dr. Boada está abierto a colaborar con médicos especialistas. Escríbele por correo indicando:<br><br>
 🏥 Tu especialidad médica.<br>
 🔬 Tipo de procedimientos en los que colaborarías.<br>
 🏢 Institución o clínica donde trabajas.<br><br>
-<a href="https://wa.me/${CB.wa}" target="_blank" class="chat-wa-btn">🤝 Escribir al Dr. Boada</a>`,
+<a href="mailto:${CB.email}" class="chat-wa-btn">🤝 Escribir al Dr. Boada</a>`,
 
   about: `El Dr. Maximiliano Boada es médico anestesiólogo con formación especializada en anestesia general, regional y pediátrica. Trabaja en Venezuela con los más altos estándares de seguridad, combinando rigor científico y calidez humana en cada procedimiento.`,
 
@@ -1207,7 +1193,7 @@ El Dr. Boada entiende que cada niño es único. Su enfoque pediátrico combina p
 ✅ <b>Comunicación clara y empática</b> con toda la familia en cada etapa.<br><br>
 El Dr. Boada cuenta con entrenamiento especializado en anestesia pediátrica y amplia experiencia en procedimientos para bebés, niños y adolescentes de todas las edades.<br><br>
 ¿Tienes preguntas sobre el procedimiento de tu hijo? Contáctanos directamente:<br>
-<a href="https://wa.me/584143118917" target="_blank" class="chat-wa-btn">💬 Consultar por WhatsApp</a>`,
+<a href="mailto:bramador33@gmail.com" class="chat-wa-btn">✉️ Consultar por correo</a>`,
 };
 
 const CB_MENU = [
@@ -1302,7 +1288,7 @@ async function cbRespond(intent, raw) {
     cbHideTyping(); cbAddMsg(reply, 'bot');
   } catch {
     cbHideTyping();
-    cbAddMsg(`Hubo un problema al conectar con el asistente. <a href="https://wa.me/${CB.wa}" target="_blank" class="chat-wa-btn">💬 Escríbenos por WhatsApp</a>`, 'bot');
+    cbAddMsg(`Hubo un problema al conectar con el asistente. <a href="mailto:${CB.email}" class="chat-wa-btn">✉️ Escríbenos por correo</a>`, 'bot');
   }
   cbSetChips(CB_MENU);
 }
